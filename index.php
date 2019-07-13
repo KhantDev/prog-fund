@@ -1,6 +1,9 @@
 <?php
-// programming Fundamental
-// This is for the beginner 
-// Sequntial
 
-?>
+//Sequential
+$a = 5;
+$b = 10;
+$c =$a + $b;
+echo $c."<br>";
+$c = $c + 5;
+echo $c;
