@@ -39,3 +39,53 @@ echo"<br>";
  if ($name =="Ko Ko") {    //false
  	echo "Get out";
  }
+echo"<br>";
+ //Array
+$names = array("Bo Bo", "Ni Ni", "Mu Mu");
+ 
+ print_r($names);
+echo "<Br>".$names[2];
+
+$customers_name= ["Bo Bo","Ni Ni","Mg Mg"];
+$titleName = [
+	"name" =>"Bo Bo",
+	"age" =>"17",
+	"class"=>"physic"
+	];
+$cilentName=array("Bo Bo","Ni Ni","Mg Mg");
+echo $titleName["name"]. ' ' .$titleName["age"];
+echo "<br>";
+//Null
+$name ="Bo Bo";
+echo $name;
+$name=null;
+echo "<br>".$name="nothing";
+echo "<br>";
+
+//loosely type language
+$name = "Bo Bo";
+echo $name;
+$name = 99.4;
+echo $name;
+echo "<br>";
+//Constant : ever global ကိန္းေသ
+define("NAME", "Bo Bo",true);
+//define ("NAME","Nyi Nyi");   Error
+echo NAME;
+echo name;
+define ("title",["Apple","Fb","Ar"]);
+echo title[1];
+
+//funcatinal programming
+
+function one(){
+
+	echo "Bo Bo";
+}
+function two()
+{
+
+	echo "Ni Ni";
+}
+one();
+two();
