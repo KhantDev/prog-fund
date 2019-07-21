@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
  //String
  $name = "Bo Bo";
@@ -78,14 +78,96 @@ echo title[1];
 
 //funcatinal programming
 
-function one(){
+function one($name,$high=21){
 
-	echo "Bo Bo";
+	echo "his name is  $name <br>";
+	echo "his high is $high <br>";
+
 }
+one("Bo BO",8);
+one("ni ni");
+one("Mg Mg",9);
 function two()
 {
 
 	echo "Ni Ni";
 }
-one();
-two();
+
+
+function three ($name , $high){      //Argument
+     
+    echo "his name is  $name <br>";
+    echo "his high is $high <br>";
+
+}
+three("bo bo" , 5);    //parameter
+three("Ni Ni", 6);
+three("Mg Mg",7);
+
+
+function total (int $price , int $cost){
+
+	echo $price +  $cost;
+ }
+
+total (300, 933);
+
+
+//local & Global Scope
+
+
+$price = 30;    //Global variable
+
+ function four()
+ {
+ 	//$prices=30; //local variable
+     
+     global $price; 
+     $cost =20;
+
+     echo $price + $cost;
+    }
+
+ function add ()
+ {
+     echo $cost + 10;      //Unfined error
+   
+
+ }
+ four();
+ add();
+
+ //Static Variable     //global & static
+ $m = 30;
+ function five ()
+ {
+
+ 	global $m;
+ 	echo ++$m."<br>"; 
+ }
+five();
+five();
+five();
+
+function gog ()
+{
+
+	$x=20;
+	echo ++$x."<br>";
+}
+gog ();
+gog ();
+gog ();
+
+function create ()
+{
+  static $x = 20;
+  echo ++$x ."<br>";
+
+}
+
+  create ();
+  create ();
+  create ();
+  
+ 
