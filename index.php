@@ -170,4 +170,63 @@ function create ()
   create ();
   create ();
   
- 
+ //Return Type Declaration  & Type Casting
+ $total =0;
+
+ function sun (float $price ,float $quantity) :int
+ {
+      return (int)($price+$quantity);  
+
+ }
+
+$total  = sun (20.3, 50.4);
+echo "Tax included amount is".($total);
+echo "<br>";
+
+//Arithmetic Operators (+,-,*,/,%,**)
+$x = 12;
+$y = 6;
+echo $x ** $y;
+echo "<br>";
+//Assigment Operators (=,+=,-=,/=,%=)
+$A =  7;
+$B = 5;
+
+$A += $B;
+echo $A;
+echo "<br>";
+//Comparison Operators (==,===,!=,<>,!==,>,<,>=,<=,<=>)
+$user = 123;
+
+if ($user >= 123) {    //if right- ture, if worng- false
+
+	echo"You are logined <br>";
+}
+$x = 3;
+$y = 4;
+echo $x <=> $y;  //spaceship - if less than: -1 , equal : 0 , greater : 1
+
+//Increment / Decrement Operators (++,--)
+$x = 1;
+$y = 2;
+echo $x++;
+echo $x++;
+echo $x++;
+echo $x++;
+
+echo "<br>";
+echo ++$y;
+echo ++$y;
+echo ++$y;
+echo ++$y;
+
+//Logical Operators (and,or,xor,&&,//,!)
+$a =  3;
+$b =  4;
+if ($a == 3 xor $b == 4) {
+	echo "Either one is ture,but not both";
+
+}
+$status = true;
+echo !$status;  //ture 1, false 0
+var_dump(!$status);
