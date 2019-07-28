@@ -230,3 +230,39 @@ if ($a == 3 xor $b == 4) {
 $status = true;
 echo !$status;  //ture 1, false 0
 var_dump(!$status);
+
+//String Operators (. , .=)
+$age = "year ";
+$age = " old";  //$age = $age. " old";
+echo "Bo Bo" . $age;
+echo "<br>";
+
+//Conditional (or ternary) Operators ( ?  :)
+$user = "Bo Bo";
+$status = $user == "Bo Bo" ? "Accecpted" : "Deny";
+echo $status;
+
+// if ($user == "Bo Ba") {
+
+// 	$status = "Accepted";
+// }else {
+// 	$status = "Deny";
+// }
+
+//Null coalescing ( ?? )
+echo "<br>";
+$color = "red";
+$car = $color ?? "white";
+echo $car;
+
+include ("Book.php");
+//Creating Object
+$book1 = new Book;
+$book2 = new Book;
+
+$book1->setInfo("linka",5000,"Chit ko");
+$book1->getInfo();
+echo "<br>";
+
+$book2->setInfo("Yarzawin",9000,"U Kala");
+$book2->getInfo();
