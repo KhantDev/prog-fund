@@ -262,7 +262,11 @@ $book2 = new Book;
 
 $book1->setInfo("linka",5000,"Chit ko");
 $book1->getInfo();
-echo "<br>";
+echo "<br>"; 
+
+
 
 $book2->setInfo("Yarzawin",9000,"U Kala");
-$book2->getInfo();
+$book2->getInfo()
+
+
